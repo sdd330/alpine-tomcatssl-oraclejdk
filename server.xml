@@ -84,8 +84,8 @@
          OpenSSL style configuration is required as described in the APR/native
          documentation -->
     <Connector port="8443" protocol="org.apache.coyote.http11.Http11Protocol"
-               maxThreads="150" SSLEnabled="true" scheme="https" secure="true"
-               clientAuth="false" sslProtocol="TLS" 
+               maxThreads="150" scheme="https" secure="true"
+               SSLEnabled="true" 
                SSLCertificateFile="/root/.ssh/id_rsa.crt" 
                SSLCertificateKeyFile="/root/.ssh/id_rsa" 
                SSLVerifyClient="optional" />
