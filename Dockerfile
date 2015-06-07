@@ -12,6 +12,6 @@ RUN \
 
 WORKDIR $CATALINA_HOME
 
-RUN sed -i '/<!--$/{N;/SSLEnabled/{N;N;N;s/.*<!--\n\(.*\)\/>\n.*-->/\1SSLCertificateFile="\/root\/.ssh\/id_rsa.crt" SSLCertificateKeyFile="\/root\/.ssh\/id_rsa" SSLVerifyClient="optional" \/>/}}' conf/server.xml
+ADD server.xml $CATALINA_HOME/conf/server.xml
 
 EXPOSE 8443
