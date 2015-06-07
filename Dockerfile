@@ -12,6 +12,6 @@ RUN \
 
 WORKDIR $CATALINA_HOME
 
-ADD server.xml $CATALINA_HOME/conf/server.xml
+COPY server.xml $CATALINA_HOME/conf/server.xml
 
 EXPOSE 8443
